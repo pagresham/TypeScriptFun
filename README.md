@@ -5,4 +5,5 @@ It will be an *ongoing* repo.
 ### Present contents
 * WhackAMole
   * Adaptation of a Java console game to a JS/node command line game. - input error handling is not *perfect* at present.
-
+* SquarelotronJS
+  * Another JS/TS adaptation of a Java class - *just started* 
