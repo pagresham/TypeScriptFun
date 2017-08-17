@@ -39,7 +39,7 @@ class WhackAMole {
 
     /**
      * Tries to place a mole
-     * If nmber is out of range, returns false, or if is Mole already ret false
+     * If nmber is out of range, returns false, or if is Mole already return false
      * If possible, incriments molesLeft, and changes tile to 'M'
      */
     place(x: number, y: number): boolean {
@@ -136,7 +136,8 @@ function onErr(err:string) {
 
 let game = new WhackAMole(20, 10);
 for(let i = 0; i < 10; i++) {
-    game.place(i, i);
+    var column:number = parseInt(Math.random()*10)
+    game.place(i, column);
 }
 game.printGrid();
 game.showScore();

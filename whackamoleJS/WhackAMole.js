@@ -34,7 +34,7 @@ var WhackAMole = (function () {
     };
     /**
      * Tries to place a mole
-     * If nmber is out of range, returns false, or if is Mole already ret false
+     * If nmber is out of range, returns false, or if is Mole already return false
      * If possible, incriments molesLeft, and changes tile to 'M'
      */
     WhackAMole.prototype.place = function (x, y) {
@@ -127,7 +127,8 @@ function onErr(err) {
 }
 var game = new WhackAMole(20, 10);
 for (var i = 0; i < 10; i++) {
-    game.place(i, i);
+    var column = parseInt(Math.random() * 10);
+    game.place(i, column);
 }
 game.printGrid();
 game.showScore();
